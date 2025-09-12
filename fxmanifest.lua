@@ -3,7 +3,7 @@ game 'gta5'
 
 description 'qs-loading'
 author 'Quasar Store'
-version '0.0.0'
+version '1.0.0'
 
 client_script 'client.lua'
 
