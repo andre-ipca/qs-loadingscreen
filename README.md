@@ -1,11 +1,10 @@
 
-
-# Quasar Loading Screen
-
 ![](https://img.shields.io/github/v/release/emanueldev1/qs-loadingscreen?logo=github)
 ![](https://img.shields.io/github/downloads/emanueldev1/qs-loadingscreen/total?logo=github)
 ![](https://img.shields.io/github/downloads/emanueldev1/qs-loadingscreen/latest/total?logo=github)
 ![](https://img.shields.io/github/contributors/emanueldev1/qs-loadingscreen?logo=github)
+
+# Quasar Loading Screen
 
 
 Quasar Loading Screen is a modern, customizable loading screen for FiveM servers, built with React, Tailwind CSS, and Vite. It provides a sleek, interactive interface with features like server status, rules, changelogs, keybinds, and dynamic audio/video backgrounds, enhancing the player experience during server connection. The project is highly customizable, allowing server owners to modify colors, text styles, and content via `config.json` and CSS.
