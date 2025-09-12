@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'qs-loading'
+description 'qs-loadingscreen'
 author 'Quasar Store'
 version '1.0.0'
 
