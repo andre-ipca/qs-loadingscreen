@@ -2,8 +2,8 @@
 
 # Quasar Loading Screen
 
-![](https://img.shields.io/github/downloads/emanueldev1/qs-loadingscreen/total?logo=github)
 ![](https://img.shields.io/github/v/release/emanueldev1/qs-loadingscreen?logo=github)
+![](https://img.shields.io/github/downloads/emanueldev1/qs-loadingscreen/total?logo=github)
 ![](https://img.shields.io/github/downloads/emanueldev1/qs-loadingscreen/latest/total?logo=github)
 ![](https://img.shields.io/github/contributors/emanueldev1/qs-loadingscreen?logo=github)
 
