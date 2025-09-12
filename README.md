@@ -116,7 +116,7 @@ The Quasar Loading Screen allows customization of both UI colors and text-specif
 
 UI colors are defined via CSS custom properties in `web/src/index.css`. These control the appearance of backgrounds, text, buttons, and custom elements like grid lines and particles.
 
-#### Steps to Customize UI Colors
+#### Steps to Customize UI Colors (DARK, LIGHT changing not available default dark)
 
 1. **Open `index.css`**:
    Navigate to `web/src/index.css`.
