@@ -329,21 +329,6 @@ To develop locally:
    - Build the app (`pnpm build`) and copy `web/build` to your FiveM server resource.
    - Restart the server to test changes.
 
-## Release Process
-
-1. **Run `release.bat`**:
-   - Execute `release.bat` in the repository root (Windows).
-   - Enter the version number (e.g., `1.0.0`).
-   - The script will:
-     - Update `fxmanifest.lua` with the new version.
-     - Build `/web/build` using `pnpm build`.
-     - Commit all changes (including untracked files).
-     - Create and push a tag (e.g., `v1.0.0`).
-
-2. **GitHub Actions**:
-   - The `.github/workflows/release.yml` workflow triggers on tag push (`v*`).
-   - It builds the web app, prepares a release with `/web/build`, `fxmanifest.lua`, `client.lua`, and other root files, and creates a GitHub release with a zip archive.
-
 ## Dependencies
 
 This project relies on the following dependencies, with gratitude to their maintainers:
