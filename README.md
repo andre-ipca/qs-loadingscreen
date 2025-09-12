@@ -17,6 +17,17 @@ Quasar Loading Screen is a modern, customizable loading screen for FiveM servers
 - **Audio/Video Support**: Supports YouTube or file-based video backgrounds and audio with volume controls.
 - **Customizable Colors**: Modify UI and text colors via `web/src/index.css` and `config.json`.
 
+## Visit Our Official Store
+
+Discover the full range of premium FiveM scripts and tools at the [Quasar Store](https://www.quasar-store.com/). From immersive roleplay systems to cutting-edge server enhancements, our store offers everything you need to elevate your FiveM server. Shop now for instant delivery, regular updates, and top-tier support!
+
+## Preview QS-LOADINGSCREEN
+
+![qs-loadingscreen1](https://assets.quasar-store.com/qs-loadingscreen/image1.png)
+![qs-loadingscreen2](https://assets.quasar-store.com/qs-loadingscreen/image2.png)
+![qs-loadingscreen3](https://assets.quasar-store.com/qs-loadingscreen/image3.png)
+
+
 ## Prerequisites
 
 To run or develop this project, ensure you have the following installed:
@@ -365,4 +376,3 @@ Contributions are welcome! Please open an issue or pull request on the [GitHub r
 ## Contact
 
 For support or inquiries, open an issue on the [GitHub repository](https://github.com/emanueldev1/qs-loadingscreen).
-
