@@ -28,12 +28,13 @@ export default function QuasarLoadingScreen() {
     const [currentTip, setCurrentTip] = useState(null)
     const [view, setView] = useState("loading")
     const [videoReady, setVideoReady] = useState(false)
-    const [playing, setPlaying] = useState(true)
+    const [playing, setPlaying] = useState(false)
     const [videoMuted, setVideoMuted] = useState(true) // Start muted to avoid autoplay issues
     const [musicMuted, setMusicMuted] = useState(false) // Inverse of video muted
     const [volume, setVolume] = useState(0.5)
     const videoRef = useRef(null)
     const audioRef = useRef(null)
+    const hasSeekedRef = useRef(false)
 
     useEffect(() => {
         fetch('./config.json')
@@ -132,14 +133,10 @@ export default function QuasarLoadingScreen() {
     }, [progress])
 
     useEffect(() => {
-        if (isVideoBackground && videoReady && !playing) {
-            // console.log("Attempting to play video")
-            setPlaying(true)
-        }
-        if (videoReady && isVideoBackground && playing) {
-            videoRef.current.currentTime = config?.background?.startFrom || 0
-        }
-    }, [videoReady, isVideoBackground, playing])
+        if (!isVideoBackground || !videoReady) return
+
+        // No-op: keep the dependency to respond to config changes if needed
+    }, [videoReady, isVideoBackground, config?.background?.startFrom])
 
     useEffect(() => {
         const handlers = {
@@ -196,7 +193,17 @@ export default function QuasarLoadingScreen() {
 
     const handleVideoReady = () => {
         // console.log("Video is ready")
-        setVideoReady(true)
+        if (!videoReady) {
+            setVideoReady(true)
+        }
+
+        if (!hasSeekedRef.current) {
+            const startFrom = config?.background?.startFrom || 0
+            videoRef.current?.seekTo?.(startFrom, "seconds")
+            hasSeekedRef.current = true
+        }
+
+        setPlaying(true)
     }
 
     const handleVideoError = (error) => {
@@ -248,7 +255,7 @@ export default function QuasarLoadingScreen() {
                 >
                     <ReactPlayer
                         ref={videoRef}
-                        src={config.background.videoUrl}
+                        url={config.background.videoUrl}
                         playing={playing}
                         loop={config.background.loop}
                         muted={videoMuted}
@@ -259,9 +266,6 @@ export default function QuasarLoadingScreen() {
                         onReady={(...data) => {
                             // console.log(...data)
                             handleVideoReady(...data)
-                        }}
-                        onPlay={() => {
-                            handleVideoReady()
                         }}
                         onError={handleVideoError}
                         config={{
