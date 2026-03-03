@@ -286,7 +286,7 @@ export default function QuasarLoadingScreen() {
             {config.audio.url && !config.audio.useVideoAudio && (
                 <ReactPlayer
                     ref={audioRef}
-                    src={config.audio.url}
+                    url={config.audio.url}
                     playing={!musicMuted && playing}
                     loop={config.audio.loop}
                     volume={volume}

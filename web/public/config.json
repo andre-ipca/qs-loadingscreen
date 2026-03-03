@@ -1,167 +1,163 @@
 {
     "server": {
-        "serverId": "serverConnectId like 3qyo9t",
+        "serverId": "7gz8ke",
         "titleMode": "mixed",
-        "title": "QUASAR [Ctext-primary font-bold]ROLEPLAY[/C]",
-        "logoUrl": "https://assets.quasar-store.com/quasar-loadingscreen.png",
-        "name": "QUASAR [Ctext-secondary font-semibold]ROLEPLAY[/C] COMMUNITY",
-        "subtitle": "Forge Your [Ctext-red-600 font-bold]Legacy[/C] in Los Santos",
-        "description": "Welcome to Quasar Roleplay, a premier FiveM server powered by QBCore Framework. Immerse yourself in a vibrant world of jobs, gangs, housing, and a dynamic economy. Shape your story today!"
+        "title": "TUGA [Ctext-primary font-bold]RP[/C]",
+        "logoUrl": "https://images-ext-1.discordapp.net/external/sa3Phy95PsRAWTlIniHwFqiJlCm3ObZrSlqkqP37fPc/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1384106013871046676/1097590e5080b4a100decdcbba1da384.png",
+        "name": "TUGA [Ctext-secondary font-semibold]ROLEPLAY[/C] COMUNIDADE",
+        "subtitle": "Faça a sua [Ctext-red-600 font-bold]história[/C] na ilha Tuga",
+        "description": "Bem-vindo ao Tuga Roleplay, servidor feito em ESX. Onde podes começar uma vida nova tranquila mas com caos. Faz a tua história hoje!"
     },
     "loadingPhases": {
         "startup": {
-            "label": "Initializing Server",
+            "label": "A iniciar o servidor",
             "icon": "Zap"
         },
         "systems": {
-            "label": "Loading Server Systems",
+            "label": "A carregar os sistemas do servidor",
             "icon": "Shield"
         },
         "assets": {
-            "label": "Loading World Assets",
+            "label": "A carregar os assets do servidor",
             "icon": "Loader2"
         },
         "map": {
-            "label": "Building City Map",
+            "label": "A construir o mapa do servidor",
             "icon": "MapPin"
         },
         "finalizing": {
-            "label": "Finalizing Connection",
+            "label": "A finalizar ligação ao servidor",
             "icon": "Users"
         },
         "default": {
-            "label": "Preparing Experience",
+            "label": "A preparar a experiência",
             "icon": "Loader2"
         }
     },
     "strings": {
-        "loadingResources": "Loading server resources...",
-        "filesProcessed": "{count} resources processed",
-        "playersOnline": "Players [Ctext-primary font-bold]Online[/C]",
-        "serverStatus": "Server [Ctext-primary font-bold]Status[/C]",
+        "loadingResources": "A carregar recursos...",
+        "filesProcessed": "{count} recursos processados",
+        "playersOnline": "Jogadores [Ctext-primary font-bold]Online[/C]",
+        "serverStatus": "Servidor [Ctext-primary font-bold]Estado[/C]",
         "ping": "Ping [Ctext-primary font-bold]AVG[/C]",
-        "proTipLabel": "🌟 [Ctext-secondary font-semibold]Roleplay Tip[/C]"
+        "proTipLabel": "🌟 [Ctext-secondary font-semibold]Dica de Roleplay[/C]"
     },
     "proTips": [
-        "Type [Ctext-primary font-bold]/help[/C] to discover all available commands and start your adventure!",
-        "Join our [Ctext-secondary font-semibold]Discord[/C] at discord.quasarroleplay.com for events and community updates!",
-        "Visit [Ctext-red-600 font-bold]City Hall[/C] to apply for jobs or purchase properties!",
-        "Use the in-game [Ctext-blue-400 font-bold]phone[/C] to manage jobs, contacts, and bank transactions!",
-        "Form [Ctext-foreground/50]gangs[/C] or start businesses in our player-driven economy!"
+        "Faz [Ctext-primary font-bold]/report[/C] para reportar algum problema que tenhas na tua aventura!",
+        "Junta-te ao nosso [Ctext-secondary font-semibold]Discord[/C] para eventos e atualizações da comunidade!",
+        "Visita o [Ctext-red-600 font-bold]Governo[/C] para aplicar a empregos ou comprar propriedades!",
+        "Usa o [Ctext-blue-400 font-bold]telemóvel[/C] para gerir casa, contactos e transações bancárias!",
+        "Forma [Ctext-foreground/50]gangs[/C] ou inicia negócios aqui no Tuga RP!"
     ],
     "rules": [
         {
-            "category": "[Ctext-primary font-bold]General Rules[/C]",
-            "description": "Core rules for all players to ensure a fair and enjoyable experience.",
+            "category": "[Ctext-primary font-bold]Regras Gerais[/C]",
+            "description": "Regras básicas para todos os jogadores, garantindo uma experiência justa e agradável.",
             "items": [
                 {
-                    "title": "No [Ctext-red-600]Cheating[/C]",
-                    "content": "Using cheats, exploits, or third-party software to gain an unfair advantage is strictly prohibited.",
+                    "title": "Sem [Ctext-red-600]Cheats[/C]",
+                    "content": "É estritamente proibido utilizar cheats, exploits ou software de terceiros para obter uma vantagem injusta.",
                     "className": "border-l-4 border-primary pl-4"
                 },
                 {
-                    "title": "Respect [Ctext-primary]Others[/C]",
-                    "content": "Treat all players with respect. Harassment, racism, or toxic behavior will result in immediate action."
+                    "title": "Respeita [Ctext-primary]os outros[/C]",
+                    "content": "Trata todos os jogadores com respeito. Assédio, racismo ou comportamento tóxico resultará em punição imediata."
                 },
                 {
-                    "title": "Roleplay [Ctext-secondary]Standards[/C]",
-                    "content": "Maintain immersion by staying in character. Use [Ctext-blue-400]/ooc[/C] for out-of-character communication.",
+                    "title": "Padrões de [Ctext-secondary]Roleplay[/C]",
+                    "content": "Mantém a imersão ao permanecer no personagem. Usa [Ctext-blue-400]/ooc[/C] para comunicação fora do personagem.",
                     "className": "border-l-4 border-primary pl-4"
                 }
             ]
         },
         {
-            "category": "[Ctext-primary font-bold]Combat Rules[/C]",
-            "description": "Guidelines for engaging in combat and PvP to maintain roleplay integrity.",
+            "category": "[Ctext-primary font-bold]Regras de Combate[/C]",
+            "description": "Orientações para a participação em combate e PvP para manter a integridade do roleplay.",
             "items": [
                 {
-                    "title": "No [Ctext-red-600]RDM[/C] (Random Deathmatching)",
-                    "content": "All combat must have a valid roleplay reason. Random attacks without context are not allowed.",
+                    "title": "Sem [Ctext-red-600]RDM[/C] (Random Deathmatching)",
+                    "content": "Todo o combate deve ter uma razão válida de roleplay. Ataques aleatórios sem contexto não são permitidos.",
                     "className": "border-l-4 border-secondary pl-4"
                 },
                 {
-                    "title": "Avoid [Ctext-orange-600]Combat Logging[/C]",
-                    "content": "Do not disconnect during or immediately after combat to evade consequences."
+                    "title": "Evita [Ctext-orange-600]Combat Logging[/C]",
+                    "content": "Não desconectes durante ou imediatamente após combate para escapar das consequências."
                 }
             ]
         },
         {
-            "category": "[Ctext-primary font-bold]Vehicle Rules[/C]",
-            "description": "Rules for vehicle usage to enhance realism and roleplay.",
+            "category": "[Ctext-primary font-bold]Regras de Veículos[/C]",
+            "description": "Regras para uso de veículos para melhorar a realismo e o roleplay.",
             "items": [
                 {
-                    "title": "Realistic [Ctext-green-600]Driving[/C]",
-                    "content": "Drive vehicles realistically. Reckless driving without roleplay justification is prohibited."
+                    "title": "Condução [Ctext-green-600]Realista[/C]",
+                    "content": "Conduz veículos de forma realista. Condução imprudente sem justificação de roleplay é proibida."
                 },
                 {
-                    "title": "Vehicle [Ctext-blue-400]Theft[/C] Roleplay",
-                    "content": "Stealing vehicles requires proper roleplay interaction and cannot be done randomly."
+                    "title": "Roubo [Ctext-blue-400]Veículo[/C] Roleplay",
+                    "content": "Roubar veículos exige uma interação adequada no jogo de papéis e não pode ser feito de forma aleatória."
                 }
             ]
         }
     ],
     "changeLogs": [
         {
-            "title": "[Ctext-primary font-bold]Update 1.2.0[/C] - Economy Overhaul",
-            "date": "2025-09-01",
-            "content": "Revamped the [Ctext-green-600]economy system[/C] with dynamic pricing and new businesses for players to own.",
+        "title": "[Ctext-primary font-bold]Fase Alpha[/C] - Desenvolvimento Base",
+        "date": "2026-01-16",
+        "content": "Estamos a configurar a [Ctext-green-600]base do servidor[/C]. Framework otimizada, sistemas de FPS estáveis e os primeiros empregos legais já integrados.",
+        "images": []
+        },
+        {
+            "title": "[Ctext-primary font-bold]Preview[/C] - Sistemas Exclusivos",
+            "date": "2026-02-20",
+            "content": "Adicionámos [Ctext-blue-400]scripts personalizados[/C] de inventário e garagem. O foco atual é garantir que a economia seja justa e divertida desde o primeiro dia.",
             "images": []
         },
         {
-            "title": "[Ctext-primary font-bold]Update 1.1.0[/C] - Gang System",
-            "date": "2025-07-15",
-            "content": "Introduced [Ctext-blue-400]gang territories[/C] and new criminal activities. Enhanced roleplay with gang interactions.",
-            "images": [
-                "https://assets.quasar-store.com/hero-background.png"
-            ]
-        },
-        {
-            "title": "[Ctext-primary font-bold]Update 1.0.0[/C] - Initial Release",
-            "date": "2025-05-20",
-            "content": "Launched [Ctext-secondary font-semibold]Quasar Roleplay[/C] with core QBCore features, including jobs, housing, and economy systems.",
-            "images": [
-                "https://assets.quasar-store.com/hero-background.png",
-                "https://assets.quasar-store.com/hero-background.png"
-            ]
+            "title": "[Ctext-primary font-bold]Atualmente[/C] - Grande Abertura",
+            "date": "2026-02-01",
+            "content": "O [Ctext-secondary font-semibold]Tuga RP[/C] está pronto! Prepara-te para uma experiência de Roleplay séria com staff ativa e sistemas inovadores.",
+            "images": ["https://images-ext-1.discordapp.net/external/sa3Phy95PsRAWTlIniHwFqiJlCm3ObZrSlqkqP37fPc/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1384106013871046676/1097590e5080b4a100decdcbba1da384.png"]
         }
+
     ],
     "keybinds": [
         {
-            "key": "F1",
-            "title": "Open [Ctext-blue-400]Inventory[/C]",
-            "description": "Opens the [Ctext-blue-400]inventory[/C] to manage your items and equipment."
+            "key": "F2",
+            "title": "Abrir [Ctext-blue-400]Inventário[/C]",
+            "description": "Abre o [Ctext-blue-400]inventário[/C] para gerir os seus itens e equipamentos."
         },
         {
-            "key": "F2",
-            "title": "Access [Ctext-blue-400]Phone[/C]",
-            "description": "Opens the [Ctext-blue-400]phone[/C] for contacts, messages, and banking."
+            "key": "F1",
+            "title": "Aceder [Ctext-blue-400]Telefone[/C]",
+            "description": "Abre o [Ctext-blue-400]telefone[/C] para contatos, mensagens e banco."
         },
         {
             "key": "F3",
-            "title": "Toggle [Ctext-blue-400]Radial Menu[/C]",
-            "description": "Toggles the [Ctext-blue-400]radial menu[/C] for quick access to actions."
+            "title": "Ativa [Ctext-blue-400]Menu Emote[/C]",
+            "description": "Ativa [Ctext-blue-400]emote menu[/C] para ações rápidas como animações, interações e mais."
         },
         {
-            "key": "E",
-            "title": "Interact with [Ctext-blue-400]Environment[/C]",
-            "description": "Interact with objects, vehicles, or NPCs in the game world."
+            "key": "ALT",
+            "title": "Interage com [Ctext-blue-400]Ambiente[/C]",
+            "description": "Interaja com objetos, veículos ou NPCs no mundo."
         },
         {
-            "key": "M",
-            "title": "Open [Ctext-blue-400]Main Menu[/C]",
-            "description": "Opens the [Ctext-blue-400]main menu[/C] for game settings and options."
+            "key": "Z",
+            "title": "Abre [Ctext-blue-400]Menu Radial[/C]",
+            "description": "Abre o [Ctext-blue-400]radial menu[/C] para ações rápidas."
         }
     ],
     "audio": {
         "enabled": true,
-        "url": "https://www.youtube.com/watch?v=ep9a-R_VgoY",
+        "url": "https://youtu.be/5KTDN4keQmU?si=b7mIMS0vVz6WRY2N",
         "volume": 0.5,
         "loop": true,
         "useVideoAudio": true
     },
     "background": {
         "type": "video",
-        "videoUrl": "https://youtu.be/nF9qH5B01X4?t=6",
+        "videoUrl": "https://youtu.be/F2iVTXUM3Sk?si=3ZS8KQp5b9z6uBQm",
         "loop": true,
         "startFrom": 6
     },

@@ -1,11 +1,6 @@
 
-![](https://img.shields.io/github/v/release/emanueldev1/qs-loadingscreen?logo=github)
-![](https://img.shields.io/github/downloads/emanueldev1/qs-loadingscreen/total?logo=github)
-![](https://img.shields.io/github/downloads/emanueldev1/qs-loadingscreen/latest/total?logo=github)
-![](https://img.shields.io/github/contributors/emanueldev1/qs-loadingscreen?logo=github)
 
 # Quasar Loading Screen
-
 
 Quasar Loading Screen is a modern, customizable loading screen for FiveM servers, built with React, Tailwind CSS, and Vite. It provides a sleek, interactive interface with features like server status, rules, changelogs, keybinds, and dynamic audio/video backgrounds, enhancing the player experience during server connection. The project is highly customizable, allowing server owners to modify colors, text styles, and content via `config.json` and CSS.
 
@@ -21,17 +16,6 @@ Quasar Loading Screen is a modern, customizable loading screen for FiveM servers
 - **Responsive Design**: Optimized for various screen sizes using Tailwind CSS.
 - **Audio/Video Support**: Supports YouTube or file-based video backgrounds and audio with volume controls.
 - **Customizable Colors**: Modify UI and text colors via `web/src/index.css` and `config.json`.
-
-## Visit Our Official Store
-
-Discover the full range of premium FiveM scripts and tools at the [Quasar Store](https://www.quasar-store.com/). From immersive roleplay systems to cutting-edge server enhancements, our store offers everything you need to elevate your FiveM server. Shop now for instant delivery, regular updates, and top-tier support!
-
-## Preview QS-LOADINGSCREEN
-
-![qs-loadingscreen1](https://assets.quasar-store.com/qs-loadingscreen/image1.png)
-![qs-loadingscreen2](https://assets.quasar-store.com/qs-loadingscreen/image2.png)
-![qs-loadingscreen3](https://assets.quasar-store.com/qs-loadingscreen/image3.png)
-
 
 ## Prerequisites
 
@@ -334,6 +318,21 @@ To develop locally:
    - Build the app (`pnpm build`) and copy `web/build` to your FiveM server resource.
    - Restart the server to test changes.
 
+## Release Process
+
+1. **Run `release.bat`**:
+   - Execute `release.bat` in the repository root (Windows).
+   - Enter the version number (e.g., `1.0.0`).
+   - The script will:
+     - Update `fxmanifest.lua` with the new version.
+     - Build `/web/build` using `pnpm build`.
+     - Commit all changes (including untracked files).
+     - Create and push a tag (e.g., `v1.0.0`).
+
+2. **GitHub Actions**:
+   - The `.github/workflows/release.yml` workflow triggers on tag push (`v*`).
+   - It builds the web app, prepares a release with `/web/build`, `fxmanifest.lua`, `client.lua`, and other root files, and creates a GitHub release with a zip archive.
+
 ## Dependencies
 
 This project relies on the following dependencies, with gratitude to their maintainers:
@@ -366,3 +365,4 @@ Contributions are welcome! Please open an issue or pull request on the [GitHub r
 ## Contact
 
 For support or inquiries, open an issue on the [GitHub repository](https://github.com/emanueldev1/qs-loadingscreen).
+
